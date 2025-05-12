@@ -1,4 +1,4 @@
-# Code Process Visualization
+# Smartrentals Code Process Visualization
 
 ## 1. Authentication Flow
 ![authentication_flow_digram](https://github.com/user-attachments/assets/eb3d52dd-c8c3-461b-9c41-4b95fe083ade)

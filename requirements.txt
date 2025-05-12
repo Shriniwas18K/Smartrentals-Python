@@ -1,0 +1,33 @@
+# Project Requirements
+
+# FastAPI and main application
+fastapi
+uvicorn
+pydantic
+python-dotenv
+
+# Database
+psycopg2-binary
+SQLAlchemy
+
+# Authentication & Security
+cryptography
+python-jose
+passlib
+bcrypt
+
+# Vector DB
+pinecone
+sentence-transformers
+torch
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+pytest-cov
+pytest-mock
+
+# Utilities
+python-multipart
+email-validator

@@ -1,7 +1,10 @@
 # Smartrentals - Technical Architecture Report
 
 ## Author : Shriniwas Kulkarni
-Passionate Python and Java Developer, PCCOE 2026 CSE(AIML)
+- **PCCOE 2026 BTech CSE(AIML)**
+- **Email:** [kshriniwas180205@gmail.com](mailto:kshriniwas180205@gmail.com)  
+- **Phone:** +91 [8999883480]  
+- **GitHub:** [github.com/Shriniwas18K](https://github.com/Shriniwas18K)  
 
 ## Overview
 This is a sophisticated property recommendation system built using FastAPI, leveraging advanced technologies for secure, scalable, and intelligent property matching.

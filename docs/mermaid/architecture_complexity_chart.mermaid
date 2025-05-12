@@ -1,0 +1,27 @@
+graph LR
+    A[User Input] --> B{Preprocessing}
+    B --> C[Semantic Embedding Generation]
+    C --> D[Vector Database Indexing]
+    D --> E[Similarity Search Engine]
+    E --> F[Machine Learning Reranking]
+    F --> G[Recommendation Generation]
+    G --> H[Result Filtering]
+    H --> I[Final Recommendations]
+
+    subgraph Advanced Processing
+    C --> |Sentence Transformers| J[Dense Vector Representation]
+    D --> |Pinecone| K[Efficient Indexing]
+    E --> |Cosine Similarity| L[Semantic Matching]
+    F --> |ML Model| M[Contextual Ranking]
+    H --> |User Preferences| N[Personalization]
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#ff9,stroke:#333,stroke-width:2px
+    style E fill:#f99,stroke:#333,stroke-width:2px
+    style F fill:#9ff,stroke:#333,stroke-width:2px
+    style G fill:#ff6,stroke:#333,stroke-width:2px
+    style H fill:#f66,stroke:#333,stroke-width:2px
+    style I fill:#6f6,stroke:#333,stroke-width:2px

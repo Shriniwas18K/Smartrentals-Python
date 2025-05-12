@@ -1,0 +1,10 @@
+---
+config:
+  layout: fixed
+---
+flowchart TD
+    A["System Entry Points"] --> B["Authentication Mechanisms"] & C["Data Input Validation"] & D["API Endpoints"]
+    B --> B1["Token-Based Authentication"] & B2["Encryption Layer"] & B3["Session Management"]
+    C --> C1["Pydantic Strict Typing"] & C2["Input Sanitization"] & C3["Parameterized Queries"]
+    D --> D1["CORS Middleware"] & D2["Rate Limiting Potential"] & D3["Secure HTTP Methods"]
+    A@{ shape: dbl-circ}

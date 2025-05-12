@@ -1,0 +1,7 @@
+graph TD
+    A[Property Address Input] --> B[Sentence Transformer]
+    B --> C[Generate Vector Embedding]
+    C --> D[Pinecone Vector Database]
+    D --> E[Semantic Similarity Search]
+    E --> F[Rank Matching Properties]
+    F --> G[Return Top Recommendations]

@@ -1,0 +1,16 @@
+---
+config:
+  theme: neo
+---
+flowchart TD
+    A["Frontend Client"] -- HTTP Requests --> B["FastAPI Backend"]
+    B -- Database Interactions --> C["PostgreSQL Database"]
+    B -- Vector Embeddings --> D["Pinecone Vector Database"]
+    B -- Embedding Generation --> E["Sentence Transformers"]
+    A@{ shape: display}
+    B@{ shape: rounded}
+    C@{ shape: cyl}
+    D@{ shape: disk}
+    style A stroke-width:2px
+    style B fill:transparent
+    style D stroke-width:2px

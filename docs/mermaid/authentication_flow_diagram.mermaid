@@ -1,0 +1,31 @@
+---
+config:
+  theme: redux-color
+---
+sequenceDiagram
+    participant Client
+    participant FastAPI
+    participant PostgreSQL
+    participant Encryption
+
+    Client->>FastAPI: Sign Up Request
+    FastAPI->>PostgreSQL: Check if user exists
+    alt User Already Exists
+        PostgreSQL-->>FastAPI: User found
+        FastAPI-->>Client: "User already exists"
+    else New User
+        FastAPI->>PostgreSQL: Insert User Credentials
+        PostgreSQL-->>FastAPI: Credentials Saved
+        FastAPI->>PostgreSQL: Log Transaction
+        FastAPI-->>Client: "User Created"
+    end
+
+    Client->>FastAPI: Sign In Request
+    FastAPI->>PostgreSQL: Verify Credentials
+    alt Valid Credentials
+        Encryption->>FastAPI: Generate Token
+        FastAPI->>PostgreSQL: Log Sign In Transaction
+        FastAPI-->>Client: Return Authentication Token
+    else Invalid Credentials
+        FastAPI-->>Client: "User does not exist"
+    end

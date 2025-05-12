@@ -100,7 +100,7 @@ class Property(BaseModel):
 - Scalable recommendation system
 
 ## Author : Shriniwas Kulkarni
-- **PCCOE 2026 Btech CSE(AIML)**
+- **PCCOE 2026 BTech CSE(AIML)**
 - **Email:** [kshriniwas180205@gmail.com](mailto:kshriniwas180205@gmail.com)  
 - **Phone:** +91 [8999883480]  
 - **GitHub:** [github.com/Shriniwas18K](https://github.com/Shriniwas18K)  
